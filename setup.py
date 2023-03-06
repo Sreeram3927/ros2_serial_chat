@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'msg_subscriber = ros2_chat.msg_subscriber:main'
         ],
     },
 )

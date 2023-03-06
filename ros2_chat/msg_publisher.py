@@ -12,3 +12,9 @@ def main(args = None) :
         msg = String()
         msg.data = input_msg
         publisher.publish(msg)
+        
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

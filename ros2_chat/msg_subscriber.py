@@ -9,3 +9,6 @@ def main(args = None):
     
     node = rclpy.create_node('subscriber_node')
     subscription = node.create_subscription(String, 'serial_chat', callback, 10)
+    
+    while rclpy.ok():
+        rclpy.spin_once(node)

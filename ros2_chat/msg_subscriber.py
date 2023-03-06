@@ -1,8 +1,8 @@
 import rclpy
-from std_msg import Strings
+from std_msgs.msg import String
 
 def callback(msg) :
-    print(msg)
+    print(msg.data)
 
 def main(args = None):
     rclpy.init(args = args)

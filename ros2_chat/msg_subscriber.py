@@ -1,5 +1,5 @@
 import rclpy
-from std.msg import Strings
+from std_msg import Strings
 
 def callback(msg) :
     print(msg)

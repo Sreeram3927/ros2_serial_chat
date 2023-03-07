@@ -3,10 +3,15 @@ from std_msgs.msg import String
 from rclpy.node import Node
 import serial
 
+
+class SerialPub(Node):
+    def __init__(self):
+        super().__init__('publisher_node')
+
 def main(args = None) :
     rclpy.init(args = args)
     
-    node = rclpy.create_node('publisher_node')
+    #node = rclpy.create_node('publisher_node')
     publisher = node.create_publisher(String, 'serial_chat', 10)
     
     while rclpy.ok():

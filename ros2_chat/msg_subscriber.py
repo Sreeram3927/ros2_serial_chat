@@ -1,5 +1,7 @@
 import rclpy
 from std_msgs.msg import String
+from rclpy.node import Node
+import serial
 
 def callback(msg) :
     print(msg.data)
